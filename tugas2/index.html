@@ -3,9 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/tugas2/styles.css">
+    <title>Form Pemesanan Tiket Pesawat</title>
 </head>
 <body>
+    <h1>Form Pemesanan Tiket Pesawat</h1>
+    <fieldset>
+        <legend>Informasi Penumpang</legend>
+        <label for="name">Nama Lengkap:</label> 
+        <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required><br><br>
+
+        <label for="identity">Nomor Identitas (KTP/Paspor):</label> 
+        <input type="text" id="identity" name="identity" placeholder="Masukkan nomor identitas" required><br><br>
+
+        <label for="gender">Jenis Kelamin:</label>
+        <div class="select-container">
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Pilih jenis kelamin</option>
+                <option value="male">Laki-laki</option>
+                <option value="female">Perempuan</option>
+            </select>
+            <img src="/tugas2/img/panahahn.jpg" alt="Ikon Panah" class="arrow-icon">
+        </div>
+        <br><br>
+        <label for="email">Alamat Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email" required><br><br>
+        <label for="phone">Nomor Telepon:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon" required><br><br>
+    </fieldset>
+<h1></h1>
+    <fieldset>
+        <legend>Informasi Penerbangan</legend>
+        <label for="departure-airport">Bandara Keberangkatan:</label>
+        <div class="select-container">
+            <select id="departure-airport" name="departure-airport" class="class-select3" required>
+                <option value="" disabled selected>Pilih bandara keberangkatan</option>
+                <option value="soekarno-hatta">Bandara-Soekarno-Hatta (CGK)</option>
+                <option value="ngurah-rai">Bandara-Ngurah Rai (DPS)</option>
+                <option value="lombok">Bandara-Internasional Lombok (LOP)</option>
+            </select>
+            <img src="/tugas2/img/panahahn.jpg" alt="Ikon Panah" class="arrow-icon3">
+        </div>
+        <br><br>
+
+        <label for="destination-airport">Bandara Tujuan:</label>
+        <div class="select-container">
+            <select id="destination-airport" name="destination-airport" class="class-select2" required>
+                <option value="" disabled selected>Pilih bandara tujuan</option>
+                <option value="soekarno-hatta">Bandara-Soekarno-Hatta (CGK)</option>
+                <option value="ngurah-rai">Bandara-Ngurah Rai (DPS)</option>
+                <option value="lombok">Bandara Internasional Lombok (LOP)</option>
+            </select>
+            <img src="/tugas2/img/panahahn.jpg" alt="Ikon Panah" class="arrow-icon2">
+        </div>
+        <br><br>
+
+        <label for="departure-date">Tanggal Keberangkatan:</label> 
+        <input type="date" id="departure-date" name="departure-date" required><br><br>
+
+        <label for="return-date">Tanggal Kepulangan (opsional):</label> 
+        <input type="date" id="return-date" name="return-date"><br><br>
+
+        <label for="passengers">Jumlah Penumpang:</label>
+        <input type="number" id="passengers" name="passengers" min="1" max="200" value="1" required class="passenger-count"><br><br>
+
+        <label for="class">Kelas Penerbangan:</label>
+        <div class="select-container">
+            <select id="class" name="class" class="class-select4" required>
+                <option value="economy">Ekonomi</option>
+                <option value="business">Bisnis</option>
+                <option value="first">First Class</option>
+            </select>
+            <img src="/tugas2/img/panahahn.jpg" alt="Ikon Panah" class="arrow-icon4">
+        </div>
+        <br><br>
+    </fieldset>
+<h1></h1>
     
-</body>
-</html>
+    <h1></h1>
+    <fieldset>
+        <Legend>Metode Pembayaran</Legend>
+        <label>Pilih Metode Pembayaran:</label><br>
+        <input type="radio" id="Credit" name="class" value="Credit" required>
+        <label for="economy">Kartu Kredit</label><br>
+        <input type="radio" id="Bank" name="class" value="Bank" required>
+        <label for="">Transfer Bank</label><br>
+        <input type="radio" id="E-wallet" name="class" value="E-wallet" required>
+        <label for="first">E-Wallet (GoPay,OVO,dll)</label><br><br>
+    </fieldset>
+    <h1></h1>
+
+    <button>Pesan Tiket</button>
+    

@@ -1,0 +1,92 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.select-container {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+}
+
+select {
+    width: 48%;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.arrow-icon, .arrow-icon2, .arrow-icon3, .arrow-icon4 {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 14px; 
+    height: auto; 
+    border-radius: 5px;
+    pointer-events: none;
+    transition: border 0.3s;
+}
+
+.arrow-icon {
+    right: 52.6%; 
+}
+
+.arrow-icon2 {
+    right: 31%; 
+}
+
+.arrow-icon3 {
+    right: 33%; 
+}
+
+.arrow-icon4 {
+    right: 65%; 
+}
+
+.select-container:hover .arrow-icon,.select-container:hover .arrow-icon2,.select-container:hover .arrow-icon3,.select-container:hover .arrow-icon4 {
+    border: 2px solid black;
+    padding: 2px;
+}
+
+.class-select {
+    width: 70%;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.class-select2 {
+    width: 70%;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.class-select3 {
+    width: 68%;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.class-select4 {
+    width: 36%;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="number"] {
+    width: 3%; 
+    height: 10px;
+    padding: 5px;
+    border: 1px solid #00000080;
+}
+
+
