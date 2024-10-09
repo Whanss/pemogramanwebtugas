@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url('/tugas3/img/phpMEPMs7.png');
+    background-size: 150%; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; 
+    line-height: 1.6;
+    color: #050607;
+    background-color: #242424;
+}
+
+
+h3 {
+    text-align: center;
+    color: #ffffff;
+    font-family: valorant;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 123, 255, 0); 
+    color: white;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 100px; 
+    height: auto;
+}
+
+.logo2 {
+    position: absolute;
+    top: 16px; 
+    right: 20px; 
+    width: 60px; 
+    height: auto; 
+    z-index: 10; 
+
+}
+h2 {
+    margin-bottom: 20px;
+}
+
+main {
+    flex: 1; 
+    padding: 20px;
+    font-family: 'Famous College', Times, serif;
+}
+
+h4 {
+    margin-top: 10px;
+    font-family: 'valorant', Times, serif;
+    color: white
+}
+
+.membership-options {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    gap: 0px; 
+}
+
+.membership-card {
+    background: rgba(217, 229, 186, 0.963);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(4, 0, 0, 0.929);
+    padding: 30px;
+    width: 300px;
+    height: 480px;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+    margin: 19px; 
+}
+.membership-card:hover {
+    transform: translateY(-5px);
+}
+
+.membership-card h3 {
+    color: #1e2124;
+    position: relative;
+    margin-left: 4px; 
+}
+
+.membership-line {
+    width: 100%; 
+    height: 2px; 
+    background-color: #000000; 
+    border: none; 
+}
+
+.membership-card ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin-top: 20px; 
+    margin-bottom: auto; 
+}
+
+.membership-card img {
+    margin-top: 10px; 
+    margin-bottom: 20px; 
+}
+
+button {
+    color: #000000;
+    border: 2px solid #000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "GT proelium";
+    font-stretch: narrower;
+}
+
+
+.novice-btn {
+    background-color: #4caf50; 
+}
+
+.elite-btn {
+    background-color: #2196f3; 
+}
+
+.queen-btn {
+    background-color: #f44336; 
+}
+
+
+.novice-btn:hover {
+    background-color: #388e3c; 
+    color: #ffffff;
+}
+
+.elite-btn:hover {
+    background-color: #1976d2; 
+    color: #fffefe;
+}
+
+.queen-btn:hover {
+    background-color: #d32f2f; 
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #b09000;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5); 
+    color: #ffffff; 
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.img1 {
+    width: 100px; 
+    height: auto; 
+    margin-left: 66px;
+}
+
+.img2 {
+    width: 150px; 
+    height: auto; 
+    margin-left: 46px;
+}
+
+.img3 {
+    width: 160px; 
+    height: auto; 
+    margin-left: 41.5px;
+}
