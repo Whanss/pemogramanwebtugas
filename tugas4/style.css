@@ -1,0 +1,285 @@
+*    {
+    padding: 0;
+    margin: 0;
+    font-family: "HYWenHei-85W";
+}
+
+html, body {
+    width: 100%; 
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; 
+}
+
+body::-webkit-scrollbar {
+    display: none; 
+}
+body {
+    overflow-y: scroll; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    background-color: rgb(29, 29, 29);
+    background-size: 100%;
+    background-image: url(/tugas4/img/wallpaperflare.com_wallpaper.jpg);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgb(57, 56, 58);
+    background-color: rgba(41, 41, 41, 0.695);
+    z-index: 1000; 
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.logo {
+    height: 110px;
+    width: 120px;
+    margin-left: 50px;
+}
+
+h1 {
+    color: rgb(28, 27, 27);
+    margin-top: 11px;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+ul > li {
+    margin: 0px 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 22px;
+    text-shadow: 1px 0px 5px rgb(0, 0, 0);
+}
+
+.search {
+    margin-right: 80px;
+    transform: scale(1.2);
+}
+
+.roi {
+    background-color: rgb(238, 252, 238);
+}
+
+.fcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    position: relative;
+    width: 1000px;
+    height: 390px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: 25px;
+    box-shadow: 1px 0px 10px rgb(15, 15, 15);
+    z-index: 1; 
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    border-radius: 45px;
+    object-fit: cover;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 40px 0px;
+    font-size: 35px;
+    text-shadow: 2px 0px 10px black;
+    font-family: 'valorant';
+}
+
+.scontainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tcontainer {
+    text-shadow: 1px 0px 5px rgb(70, 70, 70);
+}
+
+.prd {
+    height: 300px;
+    width: 300px;
+    border-radius: 35px;
+    box-shadow: 1px 0px 5px rgb(5, 5, 5);
+}
+
+h3 {
+    color: white;
+    font-size: 22px;
+    margin: 15px 0px 10px 0px;
+    text-shadow: 1px 0px 5px rgb(0, 0, 0);
+}
+
+p {
+    color: white;
+}
+
+.ket {
+    width: 300px;
+    
+}
+
+.ket p {
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.det {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 550;
+    background-color: rgb(20, 20, 20);
+    padding: 7px;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+.det > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.trn {
+    text-align: start;
+    color: white;
+    margin: 70px 0px 20px 90px;
+}
+
+.trnd {
+    height: 130px;
+    width: 130px;
+    border-radius: 20px;
+    box-shadow: 0 px 0px 5px black;
+}
+
+.fivcont {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 55px 0px;
+}
+
+.wrapp {
+    color: azure;
+    display: flex;
+    width: 280px;
+    text-shadow: 0px 0px 5px rgb(205, 205, 205);
+}
+
+.wr {
+    margin-left: 20px;
+    color: antiquewhite;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.wr > p {
+    font-size: 12px;
+    font-family: 'HYWenHei-85W';
+    color: rgb(225, 225, 225);
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+p {
+    text-shadow: 0px 0px 19px white;
+    text-rendering: optimizeSpeed;
+}
+
+.wrapp > h3 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: rgba(2, 2, 2, 0.397);
+    padding: 0px 60px;
+    font-size: 25px;
+    text-shadow: 0px 0px 2px black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: rgb(27, 27, 28);
+}
+
+.menu ul li a {
+    margin-left: 100px;
+    color: azure;
+    font-family: 'valorant', sans-serif;
+}
+.cr p {
+    text-transform: capitalize;
+}
+
+.prd, .trnd {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prd:hover, .trnd:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+
